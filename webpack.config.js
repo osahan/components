@@ -2,6 +2,7 @@ const path = require('path');
 
 module.exports = {
     entry: {
+        mavenCard: './app/src/maven-card/main.js',
         mavenEngage: './app/src/maven-engage/main.js'
     },
     output: {
