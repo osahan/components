@@ -97,7 +97,7 @@ window.customElements.define(
                         color: var(--card-sectionLabel-color, #000000);
                         font: var(--card-sectionLabel-font);
                         text-decoration: none;
-                        text-transform: uppercase;
+                        text-transform: var(--card-sectionLabel-textTransform, none);
                     }
 
                     .has-section-background .m-maven-card--section-label {
@@ -111,7 +111,7 @@ window.customElements.define(
                         font: var(--card-site-font);
                         margin-top: 15px;
                         text-decoration: none;
-                        text-transform: uppercase;
+                        text-transform: var(--card-site-textTransform, none);
                     }
 
                     .has-site-background .m-maven-card--site-label {
@@ -130,6 +130,7 @@ window.customElements.define(
                         font: var(--card-title-font);
                         margin: 0;
                         padding: 0;
+                        text-transform: var(--card-title-textTransform, none);
                     }
 
                     .m-maven-card--teaser {
@@ -137,6 +138,7 @@ window.customElements.define(
                         flex: 2;
                         font: var(--card-subTitle-font);
                         padding-top: 10px;
+                        text-transform: var(--card-subTitle-textTransform, none);
                     }
                 </style>
                 <div class="m-maven-card"></div>`;

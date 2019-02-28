@@ -40,11 +40,13 @@ window.customElements.define(
                 .m-maven-engage--title {
                     font: var(--component-title-font);
                     color: var(--component-title-color);
+                    text-transform: var(--component-title-textTransform, none);
                 }
 
                 .m-maven-engage--logo {
                     font: var(--component-title-font);
                     margin-right: 10px;
+                    display: flex;
                 }
 
                 .m-maven-engage--logo svg {
