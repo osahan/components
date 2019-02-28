@@ -127,7 +127,7 @@ window.customElements.define(
 
                     .m-maven-card--title {
                         color: var(--card-title-color, #000000);
-                        font: var(--component-title-font);
+                        font: var(--card-title-font);
                         margin: 0;
                         padding: 0;
                     }

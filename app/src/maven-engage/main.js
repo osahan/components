@@ -32,8 +32,8 @@ window.customElements.define(
 
                 .m-maven-engage--header {
                     align-items: center;
+                    border-bottom: 1px solid #e5e5e5;
                     display: flex;
-                    justify-content: space-between;
                     margin: 0 0 20px;
                     padding: 0;
                 }
@@ -43,7 +43,13 @@ window.customElements.define(
                 }
 
                 .m-maven-engage--logo {
-                    width: 30px;
+                    font: var(--component-title-font);
+                    margin-right: 10px;
+                }
+
+                .m-maven-engage--logo svg {
+                    width: 1.5em;
+                    height: 2.5em;
                 }
 
                 .m-maven-engage--content {
@@ -68,10 +74,10 @@ window.customElements.define(
             </style>
             <section class="m-maven-engage">
                 <h1 class="m-maven-engage--header">
-                    <span class="m-maven-engage--title"></span>
                     <span class="m-maven-engage--logo">
                         <svg viewBox="0 0 367.1 512"  x="0px" y="0px" xml:space="preserve"><path d="M194.9,264.1l80.5-80.5l-91.8-92l-92,92l80.5,80.5v156.2h23v-15.5h30.6v-23.6h-17.1v-23.3h17.1v-23.6h-30.6v-70.4h-0.2 V264.1z M124.6,183.8l59.4-59.4l59.4,59.4L220,207.2l-36-36l-36,36L124.6,183.8z M183.9,243.1l-27.5-27.5l27.5-27.5l27.5,27.5 L183.9,243.1z"></path></svg>
                     </span>
+                    <span class="m-maven-engage--title"></span>
                 </h1>
                 <div class="m-maven-engage--content"></div>
             </section>`;
