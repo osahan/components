@@ -8,42 +8,117 @@
             padding: 0;
             margin: 0;
         }
+
+        main {
+            margin: 0 auto;
+        }
+
+        @media only screen and (max-width: 674px) {
+            main {
+                width: 100vw;
+                padding: 0 20px;
+            }
+        }
+
+        @media only screen and (max-width: 1239px) and (min-width: 675px) {
+            main {
+                width: 620px;
+            }
+        }
+
+        @media only screen and (min-width: 1240px) {
+            main {
+                width: 1100px;
+            }
+        }
+
     </style>
     <script src="/dist/mavenEngage.min.js"></script>
 </head>
 
 <body>
-    <maven-engage src="https://jsonblob.com/api/jsonBlob/40ccb1b1-3abc-11e9-9959-69e70be952f8">
-        <script type="application/json">
-            {
-                "style": {
-                    "component": {
-                        "title": {
-                            "font": "22px/150% Arial, Helvetica, sans-serif",
-                            "color": "#000000"
+    <main>
+        <maven-engage src="https://jsonblob.com/api/jsonBlob/40ccb1b1-3abc-11e9-9959-69e70be952f8">
+            <script type="application/json">
+                {
+                    "style": {
+                        "component": {
+                            "title": {
+                                "font": "22px/150% Arial, Helvetica, sans-serif",
+                                "color": "#000000"
+                            },
+                            "backgroundColor": "transparent"
                         },
-                        "backgroundColor": "#f1f1f1"
-                    },
-                    "card": {
-                        "backgroundColor": "#dddddd",
-                        "sectionLabel": {
-                            "color": "#ffffff",
-                            "backgroundColor": "#000000",
-                            "font": "10px Arial, Helvetica, sans-serif"
-                        },
-                        "title": {
-                            "color": "#000000",
-                            "font": "18px Arial, Helvetica, sans-serif"
-                        },
-                        "subTitle": {
-                            "color": "#000000",
-                            "font": "12px Arial, Helvetica, sans-serif"
+                        "card": {
+                            "cardType": "standard",
+                            "imageStyle": "landscape",
+                            "textAlign": "center",
+                            "backgroundColor": "transparent",
+                            "sectionLabel": {
+                                "color": "#00B8FC",
+                                "font": "10px Arial, Helvetica, sans-serif"
+                            },
+                            "title": {
+                                "color": "#000000",
+                                "font": "18px Arial, Helvetica, sans-serif"
+                            },
+                            "subTitle": {
+                                "color": "#000000",
+                                "font": "12px Arial, Helvetica, sans-serif"
+                            },
+                            "site": {
+                                "color": "#000000",
+                                "backgroundColor": "#f1f1f1",
+                                "font": "10px Arial, Helvetica, sans-serif"
+                            }
                         }
                     }
                 }
-            }
-        </script>
-    </maven-engage>
-</body>
+            </script>
+        </maven-engage>
 
+
+        <maven-engage src="https://jsonblob.com/api/jsonBlob/c48ac50e-3b97-11e9-bb3d-9105f8944490">
+            <script type="application/json">
+                {
+                    "component": {
+                        "title": "From Maven Coalition: List Cards"
+                    },
+                    "style": {
+                        "component": {
+                            "title": {
+                                "font": "22px/150% Arial, Helvetica, sans-serif",
+                                "color": "#000000"
+                            },
+                            "backgroundColor": "transparent"
+                        },
+                        "card": {
+                            "cardType": "list",
+                            "imageStyle": "landscape",
+                            "backgroundColor": "transparent",
+                            "sectionLabel": {
+                                "color": "#ffffff",
+                                "backgroundColor": "#3B76FC",
+                                "font": "10px Arial, Helvetica, sans-serif"
+                            },
+                            "title": {
+                                "color": "#000000",
+                                "font": "18px Arial, Helvetica, sans-serif"
+                            },
+                            "subTitle": {
+                                "color": "#000000",
+                                "font": "12px Arial, Helvetica, sans-serif"
+                            },
+                            "site": {
+                                "color": "#3B76FC",
+                                "font": "12px Arial, Helvetica, sans-serif"
+                            }
+                        }
+                    }
+                }
+            </script>
+        </maven-engage>
+
+    </main>
+</body>
 </html>
