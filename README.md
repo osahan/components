@@ -20,8 +20,10 @@
 ## Styling & Customization
 
 The `maven-engage` element and the child `maven-card` elements may be styled using the `COMPONENT_STYLE_CONFIG` blob. An example is as follows (all attributes are currently required):
-```
+
 ### Component Style Config
+
+```
 {
     "component": {
         "title": "From Maven Coalition: List Cards"
