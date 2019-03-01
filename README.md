@@ -72,22 +72,26 @@ The `maven-engage` element and the child `maven-card` elements may be styled usi
 The JSON endpoint returns an object with a single `cards` property, which is an array of card objects. A sample card object is below:
 
 ```
-  [{
-    "title": "Double-Mushroom Cheeseburger",
-    "link": "https://www.rachaelraymag.com/recipe/double-mushroom-burger-with-cheese",
-    "site": {
-        "displayName": "Rachael Ray Every Day",
-        "link": "https://www.rachaelraymag.com/"
-    },
-    "label": {
-      "displayName": "Dinner",
-      "link": "https://www.rachaelraymag.com/recipes/dinner"
-    },
-    "subTitle": "This vegetarian burger doubles down on umami with grilled and sauteed mushrooms (plus cheese!).",
-    "image": {
-      "src": "https://www.rachaelraymag.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_700/MTYwMzI5NjQ2MDUzNzk0ODk1/double-mushroom-cheeseburgers-1218-5d67571f.webp"
-    }
-  }]
+{
+    "cards":[
+        {
+            "title": "Double-Mushroom Cheeseburger",
+            "link": "https://www.rachaelraymag.com/recipe/double-mushroom-burger-with-cheese",
+            "site": {
+                "displayName": "Rachael Ray Every Day",
+                "link": "https://www.rachaelraymag.com/"
+            },
+            "label": {
+              "displayName": "Dinner",
+              "link": "https://www.rachaelraymag.com/recipes/dinner"
+            },
+            "subTitle": "This vegetarian burger doubles down on umami with grilled and sauteed mushrooms (plus cheese!).",
+            "image": {
+              "src": "https://www.rachaelraymag.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_700/MTYwMzI5NjQ2MDUzNzk0ODk1/double-mushroom-cheeseburgers-1218-5d67571f.webp"
+            }
+      }
+  ]
+}
   ```
   ### Test Endpoints
 * `https://jsonblob.com/api/jsonBlob/c48ac50e-3b97-11e9-bb3d-9105f8944490`
